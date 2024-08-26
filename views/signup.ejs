@@ -9,7 +9,7 @@
 <body>
     <section id="auth">
         <h2>Sign Up</h2>
-        <form action="/api/auth/signup" method="POST">
+        <form id="signup-form">
             <div>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -34,5 +34,6 @@
         </form>
         <p>Already have an account? <a href="/api/auth/signin">Sign In</a></p>
     </section>
+    <script src="/static/scripts/signup.js"></script>
 </body>
 </html>

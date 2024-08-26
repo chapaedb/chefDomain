@@ -23,6 +23,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.render('index');
 });
+app.get('/shop.html', (req, res)=>{
+    res.render('shop')
+})
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use('/api', router)
 app.listen(port, () => {
