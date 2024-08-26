@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commmerce store</title>
+    <!--Font Awesome CDN-->
+    <script src="https://kit.fontawesome.com/cdd4eb7069.js"></script>
+    <!--Of course normal html-->
+    <link rel="stylesheet" href="../static/styles/my_styles.css">
+    
+    <script defer src="../static/scripts/script.js"></script>
+    <script defer src="../static/scripts/cart.js"></script>
+</head>
+<body>
+
+    <!--First header of the home page-->
+    <section id="header">
+        <a href="#"><img src="../static/images/homepage/logo2.png" alt="Company Logo" class="Logo"></a>
+        <!--Div containing the navigation bar-->
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+           <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header">
+        <h2>#KnowUs</h2>
+        <p>Who are we?</p>
+    </section>
+
+    <section id="cart" class="section-p">
+        <table width="100%" class="cart-table">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Sub-total</td>
+                </tr>
+            </thead>
+            <tbody class="cart-content">
+               <!-- <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="../images/homepage/paint_slash.png" alt=""></td>
+                    <td>Product name</td>
+                    <td>Price</td>
+                    <td><input type="number" value="1"></td>
+                    <td>sub-total</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="../images/homepage/paint_slash.png" alt=""></td>
+                    <td>Product name</td>
+                    <td>Price</td>
+                    <td><input type="number" value="1"></td>
+                    <td>sub-total</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="../images/homepage/paint_slash.png" alt=""></td>
+                    <td>Product name</td>
+                    <td>Price</td>
+                    <td><input type="number" value="1"></td>
+                    <td>sub-total</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter your coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart totals</h3>
+            <table>
+                <tr>
+                    <td>Cart subtotal</td>
+                    <td>price</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td>Price</td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+        </div>
+    </section>
+
+    <footer class="section-p">
+        <div class="col" class="Logo">
+            <img src="../static/images/homepage/logo2.png" alt="" width="120px" height="70px">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>36, Shola Ademodi Street, Lagos</p>
+            <p><strong>Phone: </strong>+234 70 108 720 30</p>
+            <p><strong>Hours: </strong>Monday to Saturday (8am - 9pm)</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">ABout us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+            
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+        
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App store or google store</p>
+            <div class="row">
+                <a href="#"><img src="../static/images/footer-images/playstore.png" alt="" width="150px" height="100px"></a>
+                <a href="#"><img src="../static/images/footer-images/appstore.png" alt="" width="150px" height="100px"></a>
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="../static/images/footer-images/secured-payment.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>&#169 Dray Fingerfoods & Grills. 2024</p>
+        </div>
+    </footer>
+
+    <section class="hidden">
+        <form action="">
+            <p>Name</p>
+            <input placeholder="Enter your name" type="text">
+            <p>Phone Number</p>
+            <input type="text" placeholder="Enter your active phone number">
+            <p>Contact address</p>
+            <input type="text" placeholder="Enter address of delivery">
+            <button class="normal" id="btn">SUBMIT</button>
+        </form>
+    </section>
+
+    <section class="hidden2">
+        <h2>Dear Customer</h2>
+        <h3>Your Order has been placed successfully</h3>
+        <p>And will be delivered at 38, emblem street</p>
+    </section>
+
+</body>
+</html>

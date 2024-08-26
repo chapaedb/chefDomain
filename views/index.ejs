@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commmerce store</title>
+    <!--Font Awesome CDN-->
+    <script src="https://kit.fontawesome.com/cdd4eb7069.js"></script>
+    <!--Of course normal html-->
+    <link rel="stylesheet" href="../static/styles/my_styles.css">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <script defer src="../static/scripts/cart.js"></script>
+    <script defer src="../static/scripts/script.js"></script>
+</head>
+<body>
+
+    <!--First header of the home page-->
+    <section id="header">
+        <a href="#"><img src="../static/images/homepage/logo2.png" alt="Company Logo" class="Logo"></a>
+        <!--Div containing the navigation bar-->
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="/api/auth/signin"><i class="fa-regular fa-user"></i></a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+           <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    
+    <!--Section for content-->
+    <section id="content">
+        <h4>Trade-in-offer</h4>
+        <h2>Super Value Deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
+        <button><a href="shop.html">Shop Now</a></button>
+    </section>  
+</body>
+</html>

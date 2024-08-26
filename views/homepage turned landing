@@ -1,0 +1,252 @@
+
+<!--Section for products-->
+    <section id="product" class="section-p">
+        <h2>FEATURED PRODUCTS</h2>
+        <p>Order up now and feel the tast</p>
+        <div class="pro-container">
+            <!--First product-->
+            <div class="product">
+                <img src="../static/images/homepage/Products/Platter4u(12k).jpeg" alt="product" width="50%">
+                <div class="desc">
+                    <span>Dray Fingerfoods</span>
+                    <h5>Chop Platter for you</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>N12,000</h4>
+                </div>
+                <button id="purch" class="add-to-cart-btn"  data-product-id="1">Add to Cart</button>
+            </div>
+            <!--Second product-->
+            <div class="product">
+                <img src="../static/images/homepage/Products/Beef_samosa(150).jpeg" alt="product" width="50%">
+                <div class="desc">
+                    <span>Dray Fingerfoods</span>
+                    <h5>Beef Samosa</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>N150</h4>
+                </div>
+                <button id="purch" class="add-to-cart-btn"  data-product-id="2">Add to Cart</button>
+            </div>
+            <!--Third product-->
+            <div class="product">
+                <img src="../static/images/homepage/Products/customised_platter(30k).jpeg" alt="product" width="50%">
+                <div class="desc">
+                    <span>Dray Fingerfoods</span>
+                    <h5>Customised platter</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>N30,000</h4>
+                </div>
+                <button id="purch" class="add-to-cart-btn"  data-product-id="3">Add to Cart</button>
+            </div>
+            <!--FOurth product-->
+            <div class="product">
+                <img src="../static/images/homepage/Products/Grilled_chicken(5000).jpeg" alt="product" width="50%">
+                <div class="desc">
+                    <span>Dray Fingerfoods</span>
+                    <h5>Grilled Chicken</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>N5,000</h4>
+                </div>
+                <button id="purch" class="add-to-cart-btn"  data-product-id="4">Add to Cart</button>
+            </div>
+            <!--Fifth product-->
+            <div class="product">
+                <img src="../static/images/homepage/Products/Moneybag(300).jpeg" alt="product" width="50%">
+                <div class="desc">
+                    <span>Dray Fingerfoods</span>
+                    <h5>Moneybag</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>N300</h4>
+                </div>
+                <button id="purch" class="add-to-cart-btn"  data-product-id="5">Add to Cart</button>
+            </div>
+            <!--SIxth product-->
+            <div class="product">
+                <img src="../static/images/homepage/Products/Chapman(3000).jpeg" alt="product" width="50%">
+                <div class="desc">
+                    <span>Dray Fingerfoods</span>
+                    <h5>Chapman</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>N3,0000</h4>
+                </div>
+                <button id="purch" class="add-to-cart-btn"  data-product-id="6">Add to Cart</button>
+            </div>
+            <!--Seventh product-->
+            <div class="product">
+                <img src="../static/images/homepage/Products/Puff(50).jpeg" alt="product" width="50%">
+                <div class="desc">
+                    <span>Dray Fingerfoods</span>
+                    <h5>Puff</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>N50</h4>
+                </div>
+                <button id="purch" class="add-to-cart-btn"  data-product-id="7">Add to Cart</button>
+            </div>
+            <!--Eight product-->
+            <div class="product">
+                <img src="../static/images/homepage/Products/Grilled_Fish (6k).jpeg" alt="product" width="50%">
+                <div class="desc">
+                    <span>Dray Fingerfoods</span>
+                    <h5>Grilled Fish</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>N6,000</h4>
+                </div>
+                <button id="purch" class="add-to-cart-btn"  data-product-id="8">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Call to action banner-->
+    <section id="banner" class="section-m">
+        <h4>Easter package</h4>
+        <h2>Up to <span>20% off</span> - All Foods & Drinks</h2>
+        <button class="normal">Explore More</button>
+    </section>
+
+    <!--Banner section-->
+    <section id="second-banner" class="section-p">
+        <div class="banner-box">
+            <h4>Crazy deals</h4>
+            <h2>Buy 1 get 1 free</h2>
+            <span>The best sale is at Dray Fingerfoods</span>
+            <button class="trans">Learn More</button>
+        </div>
+        <div class="banner-box">
+            <h4>Crazy deals</h4>
+            <h2>Buy 1 get 1 free</h2>
+            <span>The best sale is at Dray Fingerfoods</span>
+            <button class="trans">Learn More</button>
+        </div>
+    </section>
+
+    <!--More banner-->
+    <section id="banner3">
+        <div class="banner-box">
+            <h2>Just A Call & We Deliver</h2>
+            <h3>+2347010872030</h3>
+        </div>
+        <div class="banner-box">
+            <h2>Just A Call & We Deliver</h2>
+            <h3>+2347010872030</h3>
+        </div>
+        <div class="banner-box">
+            <h2>Just A Call & We Deliver</h2>
+            <h3>+2347010872030</h3>
+        </div>
+    </section>
+
+    <!--Newsletter-->
+    <section id="newsletter" class="section-p" class="section-m">
+        <div class="newstext">
+            <h4>Sign up for Newsletter</h4>
+            <p>Get e-mail updates about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <a href="#"><button class="normal">Sign up</button></a>
+        </div>
+    </section>
+
+    <footer class="section-p">
+        <div class="col" class="Logo">
+            <img src="../static/images/homepage/logo2.png" alt="" width="120px" height="70px">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>36, Shola Ademodi Street, Lagos</p>
+            <p><strong>Phone: </strong>+234 70 108 720 30</p>
+            <p><strong>Hours: </strong>Monday to Saturday (8am - 9pm)</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">ABout us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+            
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+        
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App store or google store</p>
+            <div class="row">
+                <a href="#"><img src="../static/images/footer-images/playstore.png" alt="" width="150px" height="100px"></a>
+                <a href="#"><img src="../static/images/footer-images/appstore.png" alt="" width="150px" height="100px"></a>
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="../static/images/footer-images/secured-payment.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>&#169 Dray Fingerfoods & Grills. 2024</p>
+        </div>
+    </footer>
+
+    <!--ALert message-->
+    <div id="custom-alert" class="custom-alert">
+        <span id="custom-alert-message"></span>
+    </div>
