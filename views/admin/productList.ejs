@@ -1,0 +1,30 @@
+<!-- views/admin/productList.ejs -->
+
+<h1>Product Management</h1>
+<a href="/admin/products/create">Add New Product</a>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% products.forEach(product => { %>
+            <tr>
+                <td><%= product.name %></td>
+                <td><%= product.price %></td>
+                <td><%= product.description %></td>
+                <td>
+                    <a href="/admin/products/<%= product._id %>/edit">Edit</a>
+                    <form action="/admin/products/<%= product._id %>?_method=DELETE" method="POST">
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Manage Orders</title>
+    <link rel="stylesheet" href="/static/styles/admin.css">
+</head>
+<body>
+
+    <h1>Manage Orders</h1>
+    
+    <section id="order-management">
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Total Amount</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% orders.forEach(order => { %>
+                    <tr>
+                        <td><%= order._id %></td>
+                        <td><%= order.customerName %></td>
+                        <td><%= order.totalAmount %></td>
+                        <td><%= order.status %></td>
+                        <td>
+                            <a href="/api/orders/<%= order._id %>/view" class="view-btn">View</a>
+                            <a href="/api/orders/<%= order._id %>/update" class="update-btn">Update</a>
+                        </td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

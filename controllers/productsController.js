@@ -14,7 +14,7 @@ const createProduct = async (req, res, next)=>{
     }
 }
 
-const getProduct = async (req, res, next)=>{
+const getProduct = async (req, res)=>{
     try{
         const productId = req.params.id;
         if(!mongoose.Types.ObjectId.isValid(productId)){

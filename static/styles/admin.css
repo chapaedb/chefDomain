@@ -1,0 +1,19 @@
+/* Example CSS for the admin dashboard */
+.dashboard-container {
+    width: 80%;
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.product-list .product-item {
+    margin-bottom: 20px;
+}

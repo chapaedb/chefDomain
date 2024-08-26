@@ -6,9 +6,11 @@ const {signinValidator, signupValidator, passwordValidator} = require('../valida
 const validate = require('../validator/validate')
 const isAuth = require('../middleware/isAuth')
 const isAdmin = require('../middleware/isAdmin')
+const adminRoutes = require('./adminRoutes');
 const router = express.Router();
 
 
+router.use('/admin', adminRoutes);
 //PRODUCT ROUTES
 router.get('/products/:id', productController.getProduct);//  To get a single product by its Id
 router.get('/products', productController.getProducts);// This is to get all the products
@@ -27,5 +29,9 @@ router.get('/auth/signup', (req, res) => {
 
 router.post('/auth/signup',signupValidator, validate, signUp); 
 router.post('/auth/signin',signinValidator, validate, signIn); 
+
+
+
+
 
 module.exports = router;
