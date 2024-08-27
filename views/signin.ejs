@@ -1,3 +1,5 @@
+
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,4 +26,128 @@
         <p>Don't have an account? <a href="/api/auth/signup">Sign Up</a></p>
     </section>
 </body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commmerce store</title>
+    <!--Font Awesome CDN-->
+    <script src="https://kit.fontawesome.com/cdd4eb7069.js"></script>
+    <!--Of course normal html-->
+    <link rel="stylesheet" href="../static/styles/my_styles.css">
+
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+#auth {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 90%;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: center;
+    justify-content: center;
+   
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 15px;
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+    <section id="auth">
+        <h2>Sign In</h2>
+        <form id="signin-form">
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
+        <p>Don't have an account? <a href="/api/auth/signup">Sign Up</a></p>
+    </section>
+
+    
+
+    <script src="/static/scripts/signin.js"></script>
+
+</body>
+
+
 </html>
