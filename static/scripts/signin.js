@@ -13,15 +13,20 @@ document.getElementById('signin-form').addEventListener('submit', function(event
         },
         body: JSON.stringify({ email, password }),
     })
-    .then(response => {
-        if (response.ok) {
-            // Redirect to home page
-            window.location.href = '/';
+    .then(response => response.json())
+    .then(data => {
+        if (data.message === "Login successful!") {
+            // Check the user role
+            if (data.user.role === true) {
+                // Redirect to admin dashboard if the user is an admin
+                window.location.href = '/admin/dashboard';
+            } else {
+                // Redirect to home page if the user is not an admin
+                window.location.href = '/';
+            }
         } else {
             // Handle errors
-            return response.json().then(data => {
-                alert(data.error || 'Incorrect email or password.');
-            });
+            alert(data.error || 'Incorrect email or password.');
         }
     })
     .catch(error => {

@@ -3,6 +3,7 @@ const jwt = require('jsonwebtoken');
 const comparePassword = require('../utils/comparePassword');
 const generateToken = require('../utils/generateToken');
 const hashPassword = require('../utils/hashPassword')
+
 require('dotenv').config();
 
 // Sign Up
@@ -33,6 +34,7 @@ const signIn = async (req, res, next) => {
 
         // Check if user exists
         const user = await User.findOne({ email });
+        
         if (!user) {
             return res.status(400).json({ error: "Invalid credentials" });
         }

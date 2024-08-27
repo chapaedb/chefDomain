@@ -11,9 +11,9 @@ const isAuth = async (req, res, next) => {
       : [];
     const token = authorization.length > 1 ? authorization[1] : req.cookies.token;
 
-    // If no token is provided, return an error
+    // If no token is provided, redirect to sign-in
     if (!token) {
-      return res.status(400).json({ error: "Token is required" });
+      return res.redirect('api/auth/signin'); // Ensure no further code execution
     }
 
     try {
@@ -29,18 +29,12 @@ const isAuth = async (req, res, next) => {
       };
       next(); // Proceed to the next middleware or route handler
     } catch (error) {
-      // Handle JWT errors
-      if (error.name === 'JsonWebTokenError') {
-        return res.status(401).json({ error: "Invalid token" });
-      } else if (error.name === 'TokenExpiredError') {
-        return res.status(401).json({ error: "Token expired" });
-      } else {
-        return res.status(401).json({ error: "Unauthorized" });
-      }
+      // Handle JWT errors and redirect to sign-in
+      return res.redirect('api/auth/signin'); // Ensure no further code execution
     }
   } catch (error) {
     // Handle unexpected errors
-    res.status(500).json({ error: "Internal Server Error" });
+    return res.status(500).json({ error: "Internal Server Error" }); // Ensure no further code execution
   }
 };
 

@@ -9,7 +9,7 @@ router.get('/dashboard', isAuth, isAdmin, adminController.getDashboard);
 
 // Manage Products
 router.get('/products', isAuth, isAdmin, adminController.getAllProducts);
-console.log('GET /api/admin/products');
+
 router.post('/products', isAuth, isAdmin, adminController.createProduct);
 
 router.get('/products/:id/edit', isAuth, isAdmin, adminController.showEditProductForm);

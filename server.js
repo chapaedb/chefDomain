@@ -7,8 +7,7 @@ const port = process.env.PORT || 5000;
 const router = require('./routes/routes')
 const dotenv = require('dotenv')
 const adminRouter = require('./routes/adminRoutes')
-
-
+const isAuth = require('./middleware/isAuth')
 
 
 const connectMongodb = require('./config/db')
@@ -30,7 +29,7 @@ app.use('/admin', adminRouter);
 app.get('/', (req, res) => {
     res.render('index');
 });
-app.get('/cart.html', (req, res)=>{
+app.get('/cart.html',isAuth, (req, res)=>{
     res.render('cart')
 })
 app.get('/index.html', (req, res) => {
