@@ -20,7 +20,7 @@ document.getElementById('signin-form').addEventListener('submit', function(event
         } else {
             // Handle errors
             return response.json().then(data => {
-                alert(data.error || 'An error occurred during sign-in.');
+                alert(data.error || 'Incorrect email or password.');
             });
         }
     })
