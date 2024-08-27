@@ -14,8 +14,8 @@ router.post('/products', isAuth, isAdmin, adminController.createProduct);
 
 router.get('/products/:id/edit', isAuth, isAdmin, adminController.showEditProductForm);
 
-router.put('/products/:id/edit', isAuth, isAdmin, adminController.updateProduct);
-router.delete('/products/:id', isAuth, isAdmin, adminController.deleteProduct);
+router.post('/products/:id/edit', isAuth, isAdmin, adminController.updateProduct);
+router.post('/products/:id/delete', isAuth, isAdmin, adminController.deleteProduct);
 
 // Manage Orders
 router.get('/orders', isAuth, isAdmin, adminController.getAllOrders);
@@ -23,6 +23,9 @@ router.put('/orders/:id/status', isAuth, isAdmin, adminController.updateOrderSta
 
 // Manage Users (optional)
 router.get('/users', isAuth, isAdmin, adminController.getAllUsers);
-router.delete('/users/:id', isAuth, isAdmin, adminController.deleteUser);
+
+router.post('/users/:id/delete', isAuth, isAdmin, adminController.deleteUser);
+router.post('/users/:id/edit', isAuth, isAdmin, adminController.deleteUser);
+
 
 module.exports = router;

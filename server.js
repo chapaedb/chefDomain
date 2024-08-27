@@ -2,11 +2,12 @@ const express = require('express');
 const path = require('path')
 const cookieParser = require('cookie-parser');
 const app = express();
+const methodOverride = require('method-override');
 const port = process.env.PORT || 5000;
 const router = require('./routes/routes')
 const dotenv = require('dotenv')
 const adminRouter = require('./routes/adminRoutes')
-const methodOverride = require('method-override');
+
 
 
 

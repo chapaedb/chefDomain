@@ -36,6 +36,7 @@ createProduct = async (req, res) => {
 
 updateProduct = async (req, res) => {
     try {
+        console.log('Received data:', req.body);
         const productId = req.params.id;
         const { name, description, price } = req.body;
         const updatedProduct = await Product.findByIdAndUpdate(
@@ -47,7 +48,7 @@ updateProduct = async (req, res) => {
         if (!updatedProduct) {
             return res.status(404).send('Product not found');
         }
-
+        
         res.redirect('/admin/products'); // Redirect to the product management page
     } catch (error) {
         res.status(500).send(error.message);

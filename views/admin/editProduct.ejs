@@ -9,8 +9,8 @@
 <body>
     <div class="form-container">
         <h1>Edit Product</h1>
-        <form action="/admin/products/<%= product._id %>" method="POST">
-            <input type="hidden" name="_method" value="PUT">
+        <form action="/admin/products/<%= product._id %>/edit" method="POST">
+            
             <label for="name">Product Name</label>
             <input type="text" name="name" id="name" value="<%= product.name %>" required>
         
@@ -19,7 +19,7 @@
         
             <label for="price">Price</label>
             <input type="number" name="price" id="price" value="<%= product.price %>" required>
-        
+            <input type="hidden" name="_method" value="PUT">
             <button type="submit">Update Product</button>
         </form>
         

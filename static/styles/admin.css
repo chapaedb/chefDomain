@@ -1,19 +1,51 @@
-/* Example CSS for the admin dashboard */
-.dashboard-container {
-    width: 80%;
-    margin: auto;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
-nav ul {
-    list-style-type: none;
+h1 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+ul li {
+    margin: 10px 0;
 }
 
-.product-list .product-item {
-    margin-bottom: 20px;
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
 }
