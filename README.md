@@ -1,7 +1,3 @@
-Here’s a detailed README.md for your e-commerce food delivery project:
-
----
-
 # Chef Domain an E-Commerce Food Delivery Platform
 
 ## Table of Contents
