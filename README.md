@@ -27,3 +27,5 @@ Mongoose for MongoDB object modeling
 
 
 Chef's Domain aims to bring together food lovers and make cooking a delightful experience. 
+
+We can achieve it together 
