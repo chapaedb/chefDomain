@@ -2,7 +2,7 @@ Here’s a detailed README.md for your e-commerce food delivery project:
 
 ---
 
-# E-Commerce Food Delivery Platform
+# Chef Domain an E-Commerce Food Delivery Platform
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -20,7 +20,7 @@ Here’s a detailed README.md for your e-commerce food delivery project:
 - [License](#license)
 
 ## Introduction
-This project is an **E-Commerce Food Delivery Platform** built using the MERN stack (MongoDB, Express, React, Node.js). The platform allows users to browse, select, and order various food items. It includes features like user authentication, product management, order placement, and an admin dashboard for managing products.
+This project is an **E-Commerce Food Delivery Platform** built using the MERN stack (MongoDB, Express, React, Node.js) (well for now we opted to use EJS in place of REACT to meet our deadline!). The platform allows users to browse, select, and order various food items. It includes features like user authentication, product management, order placement, and an admin dashboard for managing products.
 
 ## Features
 - **User Authentication**: Secure sign-up, sign-in, and role-based access control.
