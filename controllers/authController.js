@@ -53,6 +53,9 @@ const signIn = async (req, res, next) => {
             maxAge: 3600000, // 1 hour
         });
 
+        req.session.userId = user._id; //store user id
+        console.log(`User signed in with ID: ${req.session.userId}`);
+
         // Respond with a success message and user info
         res.status(200).json({ message: "Login successful!",token, user: { name: user.name, email: user.email, role: user.role } });
     } catch (error) {
