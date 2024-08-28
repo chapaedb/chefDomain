@@ -78,8 +78,8 @@ This project is an **E-Commerce Food Delivery Platform** built using the MERN st
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/e-commerce-food-delivery.git
-   cd e-commerce-food-delivery
+   git clone https://github.com/yourusername/chefDomain.git
+   cd chefDomain
    ```
 
 2. **Install dependencies:**
