@@ -85,9 +85,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: #e1e4ea;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
-    position: sticky;
+    
+  
     top: 0;
     left: 0;
     z-index: 999;
@@ -144,9 +143,9 @@ body {
 
 /*HOMEPAGE STYLES ARE STATED HERE, INCLUDING FOR OTHER SECTIONS USEED IN OTHER SECTIONS*/
 #content {
-    height: 85vh;
+    height: 80vh;
     width: 100%;
-    background: #e9ecf3;
+   
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: right;

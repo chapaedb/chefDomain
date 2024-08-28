@@ -11,7 +11,45 @@
     <h1>Manage Products</h1>
     
     <section id="product-management">
-        <button id="add-product-btn">Add New Product</button>
+
+<!-- Add Product Button -->
+<button id="add-product-btn">Add New Product</button>
+
+<!-- Modal -->
+<div id="add-product-modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Add New Product</h2>
+        <form action="/admin/products" method="POST" id="add-product-form">
+            <input type="text" name="name" placeholder="Product Name" required>
+            <input type="text" name="description" placeholder="Product Description" required>
+            <input type="number" name="price" placeholder="Product Price" required>
+            <input type="text" name="category" placeholder="Product Category" required>
+            <button type="submit">Add Product</button>
+        </form>
+        
+    </div>
+</div>
+
+<script>
+    const modal = document.getElementById('add-product-modal');
+    const btn = document.getElementById('add-product-btn');
+    const span = document.getElementsByClassName('close-btn')[0];
+
+    btn.onclick = function() {
+        modal.style.display = 'block';
+    };
+
+    span.onclick = function() {
+        modal.style.display = 'none';
+    };
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    };
+</script>
 
         <table>
             <thead>

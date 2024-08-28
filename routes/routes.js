@@ -1,6 +1,7 @@
 const express = require('express');
 const productController = require('../controllers/productsController')
 const { signUp, signIn, changePassword } = require('../controllers/authController');
+const cart = require('../controllers/cartController');
 const fileUpload = require('../middleware/fileUpload')
 const {signinValidator, signupValidator, passwordValidator} = require('../validator/auth')
 const validate = require('../validator/validate')
@@ -29,6 +30,10 @@ router.get('/auth/signup', (req, res) => {
 
 router.post('/auth/signup',signupValidator, validate, signUp); 
 router.post('/auth/signin',signinValidator, validate, signIn); 
+
+//CART ROUTES
+router.post('/cart/add', cart.addToCart);
+router.get('/cart', cart.getCart);
 
 
 
