@@ -31,7 +31,7 @@ This project is an **E-Commerce Food Delivery Platform** built using the MERN st
 
 ## Technologies Used
 - **Backend**: Node.js, Express.js, MongoDB, Mongoose
-- **Frontend**: EJS (Embedded JavaScript), Bootstrap for styling
+- **Frontend**: EJS (Embedded JavaScript), Css for styling
 - **Authentication**: JWT (JSON Web Token)
 - **File Upload**: Multer
 - **Database**: MongoDB
