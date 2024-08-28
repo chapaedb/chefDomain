@@ -32,8 +32,8 @@ router.post('/auth/signup',signupValidator, validate, signUp);
 router.post('/auth/signin',signinValidator, validate, signIn); 
 
 //CART ROUTES
-router.post('/cart/add', addToCart);
-router.get('/cart', getCart);
+router.post('/cart/add', cart.addToCart);
+router.get('/cart', cart.getCart);
 
 
 
