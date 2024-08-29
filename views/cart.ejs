@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>e-commmerce store</title>
-    <!--Font Awesome CDN-->
+    <title>e-commerce store</title>
+    <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/cdd4eb7069.js"></script>
-    <!--Of course normal html-->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="../static/styles/my_styles.css">
     
+    <!-- JavaScript files -->
     <script defer src="../static/scripts/script.js"></script>
     <script defer src="../static/scripts/cart.js"></script>
 </head>
 <body>
 
-    <!--First header of the home page-->
+    <!-- First header of the home page -->
     <section id="header">
         <a href="#"><img src="../static/images/homepage/logo2.png" alt="Company Logo" class="Logo"></a>
-        <!--Div containing the navigation bar-->
+        <!-- Navigation bar -->
         <div>
             <ul id="navbar">
                 <li><a href="index.html">HOME</a></li>
@@ -30,7 +31,7 @@
             </ul>
         </div>
         <div id="mobile">
-           <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
@@ -40,6 +41,7 @@
         <p>Who are we?</p>
     </section>
 
+    <!-- Cart Section -->
     <section id="cart" class="section-p">
         <table width="100%" class="cart-table">
             <thead>
@@ -53,34 +55,12 @@
                 </tr>
             </thead>
             <tbody class="cart-content">
-               <!-- <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="../images/homepage/paint_slash.png" alt=""></td>
-                    <td>Product name</td>
-                    <td>Price</td>
-                    <td><input type="number" value="1"></td>
-                    <td>sub-total</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="../images/homepage/paint_slash.png" alt=""></td>
-                    <td>Product name</td>
-                    <td>Price</td>
-                    <td><input type="number" value="1"></td>
-                    <td>sub-total</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="../images/homepage/paint_slash.png" alt=""></td>
-                    <td>Product name</td>
-                    <td>Price</td>
-                    <td><input type="number" value="1"></td>
-                    <td>sub-total</td>
-                </tr> -->
+                <!-- Cart items will be dynamically populated here -->
             </tbody>
         </table>
     </section>
 
+    <!-- Cart totals and coupon section -->
     <section id="cart-add" class="section-p">
         <div id="coupon">
             <h3>Apply Coupon</h3>
@@ -89,27 +69,25 @@
                 <button class="normal">Apply</button>
             </div>
         </div>
-
+    
         <div id="subtotal">
             <h3>Cart totals</h3>
             <table>
-                <tr>
-                    <td>Cart subtotal</td>
-                    <td>price</td>
-                </tr>
+
                 <tr>
                     <td>Shipping</td>
                     <td>Free</td>
                 </tr>
                 <tr>
                     <td><strong>Total</strong></td>
-                    <td>Price</td>
+                    <td class="total-price">N0.00</td>
                 </tr>
             </table>
             <button class="normal">Proceed to checkout</button>
         </div>
     </section>
-
+    
+    <!-- Footer -->
     <footer class="section-p">
         <div class="col" class="Logo">
             <img src="../static/images/homepage/logo2.png" alt="" width="120px" height="70px">
@@ -130,7 +108,7 @@
         
         <div class="col">
             <h4>About</h4>
-            <a href="#">ABout us</a>
+            <a href="#">About us</a>
             <a href="#">Delivery Information</a>
             <a href="#">Privacy policy</a>
             <a href="#">Terms and Conditions</a>
