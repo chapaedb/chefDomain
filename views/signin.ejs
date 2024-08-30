@@ -42,6 +42,83 @@
 
 <style>
 
+ 
+
+
+body {
+    width: 100%;
+}
+
+.section-p {
+    padding: 40px 80px;
+}
+
+.section-m {
+    margin: 40px 0;
+}
+
+#header img {
+    width: 50%;
+}
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    
+  
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #214b64;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 25%;
+    height: 2px;
+    background: #214b64;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
 .auth-signin {
     background-color: white;
     padding: 20px;
@@ -116,6 +193,123 @@
     text-decoration: underline;
 }
 
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #088178;
+}
+
+#newsletter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#newsletter p span {
+    color: yellow;
+}
+
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+    background-color: rgb(80, 164, 209);
+    white-space: nowrap;
+    color: #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    
+}
+
+#newsletter .form {
+    display: flex;
+    width: 40%;
+
+}
+
+/*FOOTER STYLES ARE STATED HERE*/
+/*Footer code*/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .Logo {
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img{
+    border: 1px solid green;
+    border-radius: 6px;
+}
+
+footer .install .img {
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
 </style>
 
 
@@ -124,7 +318,26 @@
 
 <body>
 
-    
+       <!--First header of the home page-->
+       <section id="header">
+        <a href="#"><img src="../static/images/homepage/logo2.png" alt="Company Logo" class="Logo"></a>
+        <!--Div containing the navigation bar-->
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a class="active" href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="/api/auth/signin"><i class="fa-regular fa-user"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+           <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
 
     <section id="auth" class="auth-signin">
         <h2 class="auth-signin__heading">Sign In</h2>
@@ -143,9 +356,70 @@
     </section>
     
 
-    
-   
+    <!--Newsletter-->
+    <section id="newsletter" class="section-p" class="section-m">
+        <div class="newstext">
+            <h4>Sign up for Newsletter</h4>
+            <p>Get e-mail updates about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign up</button>
+        </div>
+    </section>
 
+    <footer class="section-p">
+        <div class="col" class="Logo">
+            <img src="../static/images/homepage/logo2.png" alt="" width="120px" height="70px">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>36, Shola Ademodi Street, Lagos</p>
+            <p><strong>Phone: </strong>+234 70 108 720 30</p>
+            <p><strong>Hours: </strong>Monday to Saturday (8am - 9pm)</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">ABout us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+            
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+        
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App store or google store</p>
+            <div class="row">
+                <a href="#"><img src="../static/images/footer-images/playstore.png" alt="" width="150px" height="100px"></a>
+                <a href="#"><img src="../static/images/footer-images/appstore.png" alt="" width="150px" height="100px"></a>
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="../static/images/footer-images/secured-payment.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>&#169 Dray Fingerfoods & Grills. 2024</p>
+        </div>
+    </footer>
+    
     
 
     <script src="/static/scripts/signin.js"></script>
