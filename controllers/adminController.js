@@ -19,6 +19,7 @@ showEditProductForm = async (req, res) => {
 };
 
 
+
 getDashboard = (req, res) => {
     res.render('admin/dashboard', { title: 'Admin Dashboard' });
 };
